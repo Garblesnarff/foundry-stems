@@ -1,0 +1,6 @@
+import { appActions, useAppStore } from '../../stores/appStore'
+
+export function TitleBar() {
+  const { tab, settings, settingsOpen } = useAppStore()
+  return <header className="h-12 border-b border-[var(--border)] bg-[var(--bg-titlebar)] flex items-center px-4 no-select"><div className="flex items-center gap-2"><div className="traffic bg-[#FF5F57]" /><div className="traffic bg-[#FEBD2E]" /><div className="traffic bg-[#28C840]" /><div className="app-icon">F</div><span className="text-[13px] tracking-[0.08em] text-[var(--text-secondary)] font-semibold">FOUNDRY CUT</span></div><div className="mx-auto flex gap-2">{(['split','queue','history'] as const).map((t)=><button key={t} onClick={()=>appActions.setTab(t)} className={`px-3 py-1 rounded-md text-[12px] ${tab===t ? 'bg-[var(--border)] text-[var(--text-primary)]':'text-[var(--text-muted)]'}`}>{t[0].toUpperCase()+t.slice(1)}</button>)}</div><div className="flex items-center gap-2"><span className="mono text-[10px] text-[var(--text-dim)]">{settings?.model ?? 'htdemucs'} · CPU · M4</span><button className={`w-7 h-7 rounded-md border border-[var(--border)] ${settingsOpen ? 'bg-[var(--border)] text-[var(--accent-amber)]':''}`} onClick={()=>appActions.toggleSettings()}>⚙</button></div></header>
+}
