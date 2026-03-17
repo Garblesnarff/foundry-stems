@@ -4,3 +4,4 @@ node_modules/
 dist/
 .vite/
 .DS_Store
+foundry-cut-frontend/src-tauri/Cargo.lock

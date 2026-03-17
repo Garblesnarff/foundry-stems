@@ -15,8 +15,25 @@
         "title": "Foundry Cut",
         "width": 1280,
         "height": 840,
-        "resizable": true
+        "resizable": true,
+        "fullscreen": false
       }
     ]
+  },
+  "bundle": {
+    "active": true,
+    "targets": ["app"],
+    "category": "Music",
+    "copyright": "© 2026 Hanson Foundry",
+    "shortDescription": "Local offline audio stem separation with Demucs",
+    "longDescription": "Drop a song and split it into vocals, drums, bass, and instruments locally on your Mac.",
+    "macOS": {
+      "minimumSystemVersion": "13.0",
+      "hardenedRuntime": true,
+      "entitlements": "entitlements.plist",
+      "exceptionDomain": "localhost",
+      "signingIdentity": "Apple Distribution",
+      "providerShortName": "TEAMID"
+    }
   }
 }

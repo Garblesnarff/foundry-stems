@@ -42,6 +42,13 @@ class AppState:
             self.health_status = "error"
             self.health_error = str(exc)
 
+    async def _wait_for_model(self) -> bool:
+        while not self.engine.loaded:
+            if self.health_status == "error":
+                return False
+            await asyncio.sleep(0.2)
+        return True
+
     async def process_queue(self):
         if self._processing_task_lock.locked():
             return
@@ -50,6 +57,14 @@ class AppState:
                 if self.engine.processing:
                     await asyncio.sleep(0.1)
                     continue
+
+                model_ok = await self._wait_for_model()
+                if not model_ok:
+                    while self.queue:
+                        job_id = self.queue.pop(0)
+                        await update_job(job_id, {"status": "failed", "error_message": "model_not_loaded", "completed_at": now_iso()})
+                        self.emit(job_id, "error", {"message": "Model is not loaded"})
+                    return
 
                 job_id = self.queue.pop(0)
                 if job_id in self.cancel_requested:
@@ -63,36 +78,24 @@ class AppState:
 
                 try:
                     self.health_status = "processing"
-                    await update_job(
-                        job_id,
-                        {
-                            "status": "processing",
-                            "started_at": now_iso(),
-                            "progress_stage": "analyzing",
-                            "progress_percent": 1,
-                        },
-                    )
+                    await update_job(job_id, {"status": "processing", "started_at": now_iso(), "progress_stage": "analyzing", "progress_percent": 1})
                     self.emit(job_id, "progress", {"stage": "analyzing", "percent": 1})
 
                     if job["model"] != self.engine.model_name:
                         await self.engine.switch_model(job["model"])
 
                     def on_progress(payload: dict):
-                        asyncio.create_task(
-                            update_job(
-                                job_id,
-                                {
-                                    "progress_stage": payload["stage"],
-                                    "progress_percent": payload["percent"],
-                                },
-                            )
-                        )
+                        asyncio.create_task(update_job(job_id, {"progress_stage": payload["stage"], "progress_percent": payload["percent"]}))
                         self.emit(job_id, "progress", payload)
 
                     result = await self.engine.separate(job["input_path"], job_id, progress_callback=on_progress)
+                    if job_id in self.cancel_requested:
+                        self.cancel_requested.discard(job_id)
+                        await update_job(job_id, {"status": "cancelled", "completed_at": now_iso(), "error_message": "Cancelled by user"})
+                        continue
+
                     output_dir = Path(job["output_dir"])
                     output_dir.mkdir(parents=True, exist_ok=True)
-
                     for stem_name, tensor in result["stems"].items():
                         if stem_name not in job["stems"]:
                             continue
