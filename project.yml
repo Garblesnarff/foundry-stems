@@ -1,0 +1,23 @@
+name: FoundryStems
+options:
+  bundleIdPrefix: com.foundry
+  deploymentTarget:
+    macOS: "14.0"
+  createIntermediateGroups: true
+targets:
+  FoundryStems:
+    type: application
+    platform: macOS
+    sources:
+      - path: Sources/FoundryStemsApp
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.foundry.stems
+        PRODUCT_NAME: FoundryStems
+        MACOSX_DEPLOYMENT_TARGET: "14.0"
+        SWIFT_VERSION: "5.9"
+        CODE_SIGN_STYLE: Automatic
+        INFOPLIST_GENERATION_MODE: GeneratedByXcode
+        GENERATE_INFOPLIST_FILE: YES
+        SWIFT_STRICT_CONCURRENCY: minimal
+        CODE_SIGN_ENTITLEMENTS: Config/FoundryStems.entitlements

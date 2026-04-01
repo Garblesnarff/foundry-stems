@@ -1,0 +1,14 @@
+{
+  "app_name": "Stems",
+  "subtitle": "Audio Stem Isolation",
+  "description": "Stems separates mixed audio tracks into individual stems, letting you isolate vocals, drums, bass, and other instruments from any song or recording. Whether you are a producer looking for acapellas, a DJ preparing remix material, or a musician learning parts by ear, Stems delivers clean separation with remarkable clarity.\n\nDrop any audio file into Stems and it extracts individual components using advanced source separation algorithms running locally on your Mac. Preview each stem in real time, adjusting levels and soloing individual parts before committing to an export. The real-time preview lets you hear exactly what you will get before processing the full track.\n\nStems supports multi-stem extraction, going beyond simple vocal and instrumental splits. Isolate drums, bass, vocals, and other instruments as separate tracks, each exported as a high-quality audio file ready for your DAW or remix workflow.\n\nAll processing happens on-device using your Mac hardware. There is no upload queue, no cloud processing delay, and no subscription required. Your audio stays on your machine from start to finish.\n\nKey Features:\n- Multi-stem extraction for vocals, drums, bass, and instruments\n- Real-time preview with per-stem level controls\n- Local on-device processing with no cloud dependency\n- High-quality audio output in standard formats\n- Drag-and-drop file loading for fast workflow\n- Batch processing for multiple tracks\n- Solo and mute controls for precise stem audition\n- Optimized for Apple Silicon performance",
+  "keywords": "stems,audio,vocal remover,music,isolation,splitter,remix,drums,bass,karaoke",
+  "primary_category": "Music",
+  "secondary_category": "Entertainment",
+  "age_rating": "4+",
+  "copyright": "2026 Hanson Foundry",
+  "privacy_url": "https://hansonfoundry.com/privacy",
+  "support_url": "https://hansonfoundry.com/support",
+  "version": "1.0.0",
+  "bundle_id": "com.hansonfoundry.Stems"
+}

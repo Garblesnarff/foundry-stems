@@ -1,0 +1,419 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		37A9143CEC75428F23048EDB /* ForgeInspectorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96BB852DE80A21BA7988AF03 /* ForgeInspectorView.swift */; };
+		5FA575A43DC83EAD314D9499 /* ForgeSettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B43557A0FC308BB7E0685A0 /* ForgeSettingsView.swift */; };
+		6AA4451212B13CCA695B4333 /* FoundryStemsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF810208D549640935BEFC3 /* FoundryStemsApp.swift */; };
+		6CF2BD12AFEBBF37E4B2DCD2 /* ForgeSessionStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26D98F4F60CB9E08C4F0707C /* ForgeSessionStore.swift */; };
+		74FA6372C9491D5BB7B3B477 /* ForgeTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71545DA290E7589BD898B019 /* ForgeTheme.swift */; };
+		76DE86FDDE207C1EFD91AAC5 /* ForgeEmptyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C1861C37792C1A652534EF6 /* ForgeEmptyView.swift */; };
+		844368A9ABDCBD6611242066 /* BilletRackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 382C15504D63635B32D91C9E /* BilletRackView.swift */; };
+		8FAEA64F93746348BC46B071 /* AppStoreShowcase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6829372E1A82BDCCAF3D1A49 /* AppStoreShowcase.swift */; };
+		956345B392E07E3A43252165 /* ForgeFaultBanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A7A55423BA49B881E31F519 /* ForgeFaultBanner.swift */; };
+		A138F8948E0B4E33BD52E77D /* BilletDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40C32FEBE17410DA7F1FCA22 /* BilletDetailView.swift */; };
+		B8B0498E0FC8661B96C85129 /* ForgeCommands.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1F1DD609942A94F0111B8E5 /* ForgeCommands.swift */; };
+		F68B01CA4C815113F95B31DB /* ForgeWorkbenchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 815DB5D40B53A0FE1C6F5885 /* ForgeWorkbenchView.swift */; };
+		F86394C63810B896E3A30CF7 /* ForgeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C24C6FD7D4389CE39A8B550F /* ForgeViewModel.swift */; };
+		F8F5A039E8B74507862E2090 /* ForgeModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDDBB02815C1361175E63DEA /* ForgeModels.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		26D98F4F60CB9E08C4F0707C /* ForgeSessionStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgeSessionStore.swift; sourceTree = "<group>"; };
+		382C15504D63635B32D91C9E /* BilletRackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BilletRackView.swift; sourceTree = "<group>"; };
+		40C32FEBE17410DA7F1FCA22 /* BilletDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BilletDetailView.swift; sourceTree = "<group>"; };
+		4A7A55423BA49B881E31F519 /* ForgeFaultBanner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgeFaultBanner.swift; sourceTree = "<group>"; };
+		6829372E1A82BDCCAF3D1A49 /* AppStoreShowcase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppStoreShowcase.swift; sourceTree = "<group>"; };
+		6B43557A0FC308BB7E0685A0 /* ForgeSettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgeSettingsView.swift; sourceTree = "<group>"; };
+		71545DA290E7589BD898B019 /* ForgeTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgeTheme.swift; sourceTree = "<group>"; };
+		815DB5D40B53A0FE1C6F5885 /* ForgeWorkbenchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgeWorkbenchView.swift; sourceTree = "<group>"; };
+		96BB852DE80A21BA7988AF03 /* ForgeInspectorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgeInspectorView.swift; sourceTree = "<group>"; };
+		9C1861C37792C1A652534EF6 /* ForgeEmptyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgeEmptyView.swift; sourceTree = "<group>"; };
+		BDDBB02815C1361175E63DEA /* ForgeModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgeModels.swift; sourceTree = "<group>"; };
+		C24C6FD7D4389CE39A8B550F /* ForgeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgeViewModel.swift; sourceTree = "<group>"; };
+		CEF810208D549640935BEFC3 /* FoundryStemsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoundryStemsApp.swift; sourceTree = "<group>"; };
+		D1F1DD609942A94F0111B8E5 /* ForgeCommands.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgeCommands.swift; sourceTree = "<group>"; };
+		FADF619F7C23758084B3913E /* FoundryStems.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FoundryStems.app; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		096FC0717D750C3205DD028C /* Commands */ = {
+			isa = PBXGroup;
+			children = (
+				D1F1DD609942A94F0111B8E5 /* ForgeCommands.swift */,
+			);
+			path = Commands;
+			sourceTree = "<group>";
+		};
+		0DEE259E5B6F28D651017FCA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FADF619F7C23758084B3913E /* FoundryStems.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		380A849FCB436208C2805F0F /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				6829372E1A82BDCCAF3D1A49 /* AppStoreShowcase.swift */,
+			);
+			path = Support;
+			sourceTree = "<group>";
+		};
+		70C0C074116EE71F5ED5D489 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				BDDBB02815C1361175E63DEA /* ForgeModels.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		78916F0B38D67E8709E6903E /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				A0622411518055CAF6B2EA61 /* FoundryStemsApp */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		A0622411518055CAF6B2EA61 /* FoundryStemsApp */ = {
+			isa = PBXGroup;
+			children = (
+				CEF810208D549640935BEFC3 /* FoundryStemsApp.swift */,
+				096FC0717D750C3205DD028C /* Commands */,
+				70C0C074116EE71F5ED5D489 /* Models */,
+				CB0F36A848B1F0DF3620DF47 /* Services */,
+				380A849FCB436208C2805F0F /* Support */,
+				F4C7F136478BAF9070D45418 /* Theme */,
+				D9857C38E055FAD9D87F8051 /* ViewModels */,
+				BC31DB152DC870E432850CB4 /* Views */,
+			);
+			path = FoundryStemsApp;
+			sourceTree = "<group>";
+		};
+		BC31DB152DC870E432850CB4 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				40C32FEBE17410DA7F1FCA22 /* BilletDetailView.swift */,
+				382C15504D63635B32D91C9E /* BilletRackView.swift */,
+				9C1861C37792C1A652534EF6 /* ForgeEmptyView.swift */,
+				4A7A55423BA49B881E31F519 /* ForgeFaultBanner.swift */,
+				96BB852DE80A21BA7988AF03 /* ForgeInspectorView.swift */,
+				815DB5D40B53A0FE1C6F5885 /* ForgeWorkbenchView.swift */,
+				F9A9EF3449712F2AB2EC72BF /* Preferences */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		CB0F36A848B1F0DF3620DF47 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				26D98F4F60CB9E08C4F0707C /* ForgeSessionStore.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		D88400596DEE41ACD3B62D87 = {
+			isa = PBXGroup;
+			children = (
+				78916F0B38D67E8709E6903E /* Sources */,
+				0DEE259E5B6F28D651017FCA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D9857C38E055FAD9D87F8051 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				C24C6FD7D4389CE39A8B550F /* ForgeViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		F4C7F136478BAF9070D45418 /* Theme */ = {
+			isa = PBXGroup;
+			children = (
+				71545DA290E7589BD898B019 /* ForgeTheme.swift */,
+			);
+			path = Theme;
+			sourceTree = "<group>";
+		};
+		F9A9EF3449712F2AB2EC72BF /* Preferences */ = {
+			isa = PBXGroup;
+			children = (
+				6B43557A0FC308BB7E0685A0 /* ForgeSettingsView.swift */,
+			);
+			path = Preferences;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		45963C6822F7E9DD99245CB1 /* FoundryStems */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 95AE5769AD7E75CD39D7CF3A /* Build configuration list for PBXNativeTarget "FoundryStems" */;
+			buildPhases = (
+				C0506FBCDCD6C6A93B1E1B72 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FoundryStems;
+			packageProductDependencies = (
+			);
+			productName = FoundryStems;
+			productReference = FADF619F7C23758084B3913E /* FoundryStems.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		60568316FFDAA820B0AE29D2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					45963C6822F7E9DD99245CB1 = {
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 5E84074F7229B0D574716D86 /* Build configuration list for PBXProject "FoundryStems" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = D88400596DEE41ACD3B62D87;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 0DEE259E5B6F28D651017FCA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				45963C6822F7E9DD99245CB1 /* FoundryStems */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C0506FBCDCD6C6A93B1E1B72 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8FAEA64F93746348BC46B071 /* AppStoreShowcase.swift in Sources */,
+				A138F8948E0B4E33BD52E77D /* BilletDetailView.swift in Sources */,
+				844368A9ABDCBD6611242066 /* BilletRackView.swift in Sources */,
+				B8B0498E0FC8661B96C85129 /* ForgeCommands.swift in Sources */,
+				76DE86FDDE207C1EFD91AAC5 /* ForgeEmptyView.swift in Sources */,
+				956345B392E07E3A43252165 /* ForgeFaultBanner.swift in Sources */,
+				37A9143CEC75428F23048EDB /* ForgeInspectorView.swift in Sources */,
+				F8F5A039E8B74507862E2090 /* ForgeModels.swift in Sources */,
+				6CF2BD12AFEBBF37E4B2DCD2 /* ForgeSessionStore.swift in Sources */,
+				5FA575A43DC83EAD314D9499 /* ForgeSettingsView.swift in Sources */,
+				74FA6372C9491D5BB7B3B477 /* ForgeTheme.swift in Sources */,
+				F86394C63810B896E3A30CF7 /* ForgeViewModel.swift in Sources */,
+				F68B01CA4C815113F95B31DB /* ForgeWorkbenchView.swift in Sources */,
+				6AA4451212B13CCA695B4333 /* FoundryStemsApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		084527A1F4481F61F09C367F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		33A2053FF59D28B1DEACD8D4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Config/FoundryStems.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_GENERATION_MODE = GeneratedByXcode;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.foundry.stems;
+				PRODUCT_NAME = FoundryStems;
+				SDKROOT = macosx;
+				SWIFT_STRICT_CONCURRENCY = minimal;
+				SWIFT_VERSION = 5.9;
+			};
+			name = Debug;
+		};
+		46112B7F2354674E1B724875 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Config/FoundryStems.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_GENERATION_MODE = GeneratedByXcode;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.foundry.stems;
+				PRODUCT_NAME = FoundryStems;
+				SDKROOT = macosx;
+				SWIFT_STRICT_CONCURRENCY = minimal;
+				SWIFT_VERSION = 5.9;
+			};
+			name = Release;
+		};
+		CE4560D691D019AF8AF73C1B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5E84074F7229B0D574716D86 /* Build configuration list for PBXProject "FoundryStems" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				084527A1F4481F61F09C367F /* Debug */,
+				CE4560D691D019AF8AF73C1B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		95AE5769AD7E75CD39D7CF3A /* Build configuration list for PBXNativeTarget "FoundryStems" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				33A2053FF59D28B1DEACD8D4 /* Debug */,
+				46112B7F2354674E1B724875 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 60568316FFDAA820B0AE29D2 /* Project object */;
+}
