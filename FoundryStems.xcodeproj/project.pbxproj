@@ -18,6 +18,7 @@
 		956345B392E07E3A43252165 /* ForgeFaultBanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A7A55423BA49B881E31F519 /* ForgeFaultBanner.swift */; };
 		A138F8948E0B4E33BD52E77D /* BilletDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40C32FEBE17410DA7F1FCA22 /* BilletDetailView.swift */; };
 		B8B0498E0FC8661B96C85129 /* ForgeCommands.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1F1DD609942A94F0111B8E5 /* ForgeCommands.swift */; };
+		DD8DAFC735C0534042648350 /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = 591006CD0334C8D17A13AD2D /* PrivacyInfo.xcprivacy */; };
 		F68B01CA4C815113F95B31DB /* ForgeWorkbenchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 815DB5D40B53A0FE1C6F5885 /* ForgeWorkbenchView.swift */; };
 		F86394C63810B896E3A30CF7 /* ForgeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C24C6FD7D4389CE39A8B550F /* ForgeViewModel.swift */; };
 		F8F5A039E8B74507862E2090 /* ForgeModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDDBB02815C1361175E63DEA /* ForgeModels.swift */; };
@@ -28,6 +29,7 @@
 		382C15504D63635B32D91C9E /* BilletRackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BilletRackView.swift; sourceTree = "<group>"; };
 		40C32FEBE17410DA7F1FCA22 /* BilletDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BilletDetailView.swift; sourceTree = "<group>"; };
 		4A7A55423BA49B881E31F519 /* ForgeFaultBanner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgeFaultBanner.swift; sourceTree = "<group>"; };
+		591006CD0334C8D17A13AD2D /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; path = PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
 		6829372E1A82BDCCAF3D1A49 /* AppStoreShowcase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppStoreShowcase.swift; sourceTree = "<group>"; };
 		6B43557A0FC308BB7E0685A0 /* ForgeSettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgeSettingsView.swift; sourceTree = "<group>"; };
 		71545DA290E7589BD898B019 /* ForgeTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgeTheme.swift; sourceTree = "<group>"; };
@@ -86,6 +88,7 @@
 			isa = PBXGroup;
 			children = (
 				CEF810208D549640935BEFC3 /* FoundryStemsApp.swift */,
+				591006CD0334C8D17A13AD2D /* PrivacyInfo.xcprivacy */,
 				096FC0717D750C3205DD028C /* Commands */,
 				70C0C074116EE71F5ED5D489 /* Models */,
 				CB0F36A848B1F0DF3620DF47 /* Services */,
@@ -159,6 +162,7 @@
 			buildConfigurationList = 95AE5769AD7E75CD39D7CF3A /* Build configuration list for PBXNativeTarget "FoundryStems" */;
 			buildPhases = (
 				C0506FBCDCD6C6A93B1E1B72 /* Sources */,
+				BBA0613D0CF84D2E77DAA357 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -203,6 +207,17 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BBA0613D0CF84D2E77DAA357 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DD8DAFC735C0534042648350 /* PrivacyInfo.xcprivacy in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		C0506FBCDCD6C6A93B1E1B72 /* Sources */ = {
@@ -306,7 +321,7 @@
 					"@executable_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 14.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.foundry.stems;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hanson-foundry.stems;
 				PRODUCT_NAME = FoundryStems;
 				SDKROOT = macosx;
 				SWIFT_STRICT_CONCURRENCY = minimal;
@@ -328,7 +343,7 @@
 					"@executable_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 14.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.foundry.stems;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hanson-foundry.stems;
 				PRODUCT_NAME = FoundryStems;
 				SDKROOT = macosx;
 				SWIFT_STRICT_CONCURRENCY = minimal;

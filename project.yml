@@ -12,7 +12,7 @@ targets:
       - path: Sources/FoundryStemsApp
     settings:
       base:
-        PRODUCT_BUNDLE_IDENTIFIER: com.foundry.stems
+        PRODUCT_BUNDLE_IDENTIFIER: com.hanson-foundry.stems
         PRODUCT_NAME: FoundryStems
         MACOSX_DEPLOYMENT_TARGET: "14.0"
         SWIFT_VERSION: "5.9"
