@@ -1,6 +1,6 @@
 name: FoundryStems
 options:
-  bundleIdPrefix: com.foundry
+  bundleIdPrefix: com.hanson-foundry
   deploymentTarget:
     macOS: "14.0"
   createIntermediateGroups: true
